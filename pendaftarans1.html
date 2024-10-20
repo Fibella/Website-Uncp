@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulir Pendaftaran Mahasiswa Baru</title>
+</head>
+<body>
+    <h1>FORMULIR PENDAFTARAN MAHASISWA BARU 2024 - G1</h1>
+    <form action="proses_pendaftaran.php" method="post">
+        <h2>Tahun & Gelombang *</h2>
+        <input type="text" name="tahun_gelombang" value="2024 - G1" readonly>
+        
+        <h2>Jalur Pendaftaran *</h2>
+        <select name="jalur_pendaftaran">
+            <option value="">-- Pilih Jalur Pendaftaran --</option>
+            <option value="jalur1">Jalur 1</option>
+            <option value="jalur2">Jalur 2</option>
+            <option value="jalur3">Jalur 3</option>
+        </select>
+
+        <h2>Data Diri</h2>
+        <label for="nik">NIK *</label>
+        <input type="text" name="nik" required>
+
+        <label for="nama_lengkap">Nama Lengkap *</label>
+        <input type="text" name="nama_lengkap" required>
+
+        <label for="email">Email *</label>
+        <input type="email" name="email" required>
+
+        <label for="tempat_tgl_lahir">Tempat & Tanggal Lahir *</label>
+        <input type="text" name="tempat_tgl_lahir" placeholder="dd/mm/yyyy" required>
+
+        <label for="jenis_kelamin">Jenis Kelamin *</label>
+        <input type="radio" name="jenis_kelamin" value="LAKI-LAKI" id="laki_laki">
+        <label for="laki_laki">LAKI-LAKI</label>
+        <input type="radio" name="jenis_kelamin" value="PEREMPUAN" id="perempuan">
+        <label for="perempuan">PEREMPUAN</label>
+
+        <label for="agama">Agama *</label>
+        <select name="agama">
+            <option value="">Pilih Agama</option>
+            <option value="islam">Islam</option>
+            <option value="kristen">Kristen</option>
+            <option value="hindu">Hindu</option>
+            <option value="budha">Budha</option>
+        </select>
+
+        <h2>Alamat Tinggal Saat Ini</h2>
+        <label for="provinsi">Provinsi *</label>
+        <select name="provinsi">
+            <option value="">Pilih Provinsi</option>
+            <option value="provinsi1">Provinsi 1</option>
+            <option value="provinsi2">Provinsi 2</option>
+            <option value="provinsi3">Provinsi 3</option>
+        </select>
+
+        <label for="kab_kota">Kab/Kota *</label>
+        <select name="kab_kota">
+            <option value="">Pilih Kabupaten/Kota</option>
+            <option value="kab_kota1">Kabupaten/Kota 1</option>
+            <option value="kab_kota2">Kabupaten/Kota 2</option>
+            <option value="kab_kota3">Kabupaten/Kota 3</option>
+        </select>
+
+        <label for="kecamatan">Kecamatan *</label>
+        <select name="kecamatan">
+            <option value="">Pilih Kecamatan</option>
+            <option value="kecamatan1">Kecamatan 1</option>
+            <option value="kecamatan2">Kecamatan 2</option>
+            <option value="kecamatan3">Kecamatan 3</option>
+        </select>
+
+        <label for="kode_pos">Kode Pos *</label>
+        <input type="text" name="kode_pos" required>
+
+        <label for="kelurahan">Kelurahan *</label>
+        <input type="text" name="kelurahan" required>
+
+        <label for="alamat">Alamat *</label>
+        <input type="text" name="alamat" required>
+
+        <label for="rt">RT *</label>
+        <input type="text" name="rt" required>
+
+        <label for="rw">RW *</label>
+        <input type="text" name="rw" required>
+
+        <label for="no_hp">No. HP *</label>
+        <input type="tel" name="no_hp" required>
+
+        <label for="no_whatsapp">No. WhatsApp *</label>
+        <input type="tel" name="no_whatsapp" required>
+
+        <label for="sumber_informasi">Sumber Informasi *</label>
+        <select name="sumber_informasi">
+            <option value="">Darimana Anda mendapatkan informasi penerimaan mahasiswa baru Universitas Cokroaminoto Palopo?</option>
+            <option value="sumber1">Sumber Informasi 1</option>
+            <option value="sumber2">Sumber Informasi 2</option>
+            <option value="sumber3">Sumber Informasi 3</option>
+        </select>
+
+        <h2>Program Studi</h2>
+        <label for="pilihan1">Pilihan 1 *</label>
+        <select name="pilihan1">
+            <option value="">Pilih Program Studi</option>
+            <option value="prodi1">Program Studi 1</option>
+            <option value="prodi2">Program Studi 2</option>
+            <option value="prodi3">Program Studi 3</option>
+        </select>
+
+        <label for="pilihan2">Pilihan 2 *</label>
+        <select name="pilihan2">
+            <option value="">Pilih Program Studi</option>
+            <option value="prodi1">Program Studi 1</option>
+            <option value="prodi2">Program Studi 2</option>
+            <option value="prodi3">Program Studi 3</option>
+        </select>
+
+        <h2>Data Login</h2>
+        <label for="username">Username *</label>
+        <input type="text" name="username" required>
+
+        <label for="password">Password *</label>
+        <input type="password" name="password" required>
+
+        <label for="ulangi_password">Ulangi Password *</label>
+        <input type="password" name="ulangi_password" required>
+
+        <input type="submit" value="Kirim">
+    </form>
+</body>
+</html>
